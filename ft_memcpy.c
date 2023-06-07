@@ -6,7 +6,7 @@
 /*   By: smizuoch <smizuoch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 14:12:29 by smizuoch          #+#    #+#             */
-/*   Updated: 2023/06/07 14:19:43 by smizuoch         ###   ########.fr       */
+/*   Updated: 2023/06/07 14:27:25 by smizuoch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*d;
 	unsigned char	*s;
 
+	if (!dest && !src)
+		return (NULL);
 	d = (unsigned char *) dest;
 	s = (unsigned char *) src;
 	while (n)
