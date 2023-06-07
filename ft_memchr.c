@@ -6,7 +6,7 @@
 /*   By: smizuoch <smizuoch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/18 15:05:38 by smizuoch          #+#    #+#             */
-/*   Updated: 2023/05/27 12:58:56 by smizuoch         ###   ########.fr       */
+/*   Updated: 2023/06/07 14:15:54 by smizuoch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
 
-	c &= 0xff;
+	c = (unsigned char)c;
 	str = (unsigned char *)s;
 	while (n --)
 	{
