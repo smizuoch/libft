@@ -6,7 +6,7 @@
 #    By: smizuoch <smizuoch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/25 10:41:01 by smizuoch          #+#    #+#              #
-#    Updated: 2023/06/07 11:23:28 by smizuoch         ###   ########.fr        #
+#    Updated: 2023/06/07 11:54:43 by smizuoch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-BONUS = ft_lstadd_front.c ft_lstlast.c ft_lstnew.c ft_lstsize.c
+BONUS = ft_lstadd_front.c ft_lstlast.c ft_lstnew.c ft_lstsize.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
 
 BONUS_OBJS = $(BONUS:.c=.o)
 
