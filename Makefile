@@ -6,7 +6,7 @@
 #    By: smizuoch <smizuoch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/25 10:41:01 by smizuoch          #+#    #+#              #
-#    Updated: 2023/06/07 13:02:25 by smizuoch         ###   ########.fr        #
+#    Updated: 2023/09/05 16:34:01 by smizuoch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,10 +29,10 @@ ifdef WITH_BONUS
 	OBJS += $(BONUS_OBJS)
 endif
 
+all: bonus
+
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-
-all: $(NAME)
 
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $@
